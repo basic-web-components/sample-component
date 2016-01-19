@@ -1,0 +1,30 @@
+{
+  "name": "sample-component",
+  "description": "Sample web component created with core component mixins",
+  "version": "0.0.0",
+  "repository": "https://github.com/basic-web-components/sample-component",
+  "license": "MIT",
+  "dependencies": {
+    "basic-web-components": "basic-web-components/basic-web-components#jan",
+    "webcomponents.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.0.14",
+    "babelify": "^7.0.2",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-browserify": "^4.0.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "browserify": {
+    "transform": ["babelify"]
+  },
+  "jshintConfig": {
+    "esnext": true
+  }
+}
