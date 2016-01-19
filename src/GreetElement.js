@@ -1,20 +1,20 @@
 /*
- * A sample custom element that uses the ElementBase base class, which defines a
- * set of common custom element mixins.
+ * A sample custom element that uses some common custom element mixins.
  */
 
-// import ElementBase from 'basic-web-components/packages/basic-element-base/src/ElementBase';
 import TemplateStamping from 'basic-web-components/packages/basic-component-mixins/src/TemplateStamping';
+import AttributeMarshalling from 'basic-web-components/packages/basic-component-mixins/src/AttributeMarshalling';
+import AutomaticNodeFinding from 'basic-web-components/packages/basic-component-mixins/src/AutomaticNodeFinding';
 
 
-/* Define a custom element. */
-export default class GreetElement extends TemplateStamping(HTMLElement) {
+// Define a custom element.
+export default class GreetElement extends AttributeMarshalling(AutomaticNodeFinding(TemplateStamping(HTMLElement))) {
 
   // Define a "punctuation" attribute.
   // If a user of this component sets the "punctuation" attribute in markup,
   // the AttributeMarshalling mixin will cause this property to be set.
   get punctuation() {
-    // Use this.$ reference created by the AutomaticNodeFinding mixin.
+    // Use a this.$.id reference created by the AutomaticNodeFinding mixin.
     return this.$.punctuation.textContent;
   }
   set punctuation(value) {
