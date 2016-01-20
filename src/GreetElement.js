@@ -2,9 +2,9 @@
  * A sample custom element that uses some common custom element mixins.
  */
 
-import TemplateStamping from 'basic-web-components/packages/basic-component-mixins/src/TemplateStamping';
-import AttributeMarshalling from 'basic-web-components/packages/basic-component-mixins/src/AttributeMarshalling';
-import AutomaticNodeFinding from 'basic-web-components/packages/basic-component-mixins/src/AutomaticNodeFinding';
+import TemplateStamping from 'basic-component-mixins/src/TemplateStamping';
+import AttributeMarshalling from 'basic-component-mixins/src/AttributeMarshalling';
+import AutomaticNodeFinding from 'basic-component-mixins/src/AutomaticNodeFinding';
 
 
 // Define a custom element.
