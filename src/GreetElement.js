@@ -2,13 +2,15 @@
  * A sample custom element that uses some common custom element mixins.
  */
 
-import TemplateStamping from 'basic-component-mixins/src/TemplateStamping';
 import AttributeMarshalling from 'basic-component-mixins/src/AttributeMarshalling';
-import AutomaticNodeFinding from 'basic-component-mixins/src/AutomaticNodeFinding';
+import ShadowElementReferences from 'basic-component-mixins/src/ShadowElementReferences';
+import ShadowTemplate from 'basic-component-mixins/src/ShadowTemplate';
 
 
 // Define a custom element.
-export default class GreetElement extends AttributeMarshalling(AutomaticNodeFinding(TemplateStamping(HTMLElement))) {
+export default class GreetElement extends AttributeMarshalling(
+  ShadowElementReferences(ShadowTemplate(HTMLElement))
+) {
 
   // Define a "punctuation" attribute.
   // If a user of this component sets the "punctuation" attribute in markup,
