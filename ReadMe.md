@@ -8,3 +8,8 @@ The sample component uses mixins to handle common web component fundamentals:
 
 There are [ES5](Hello World\(ES5\)) and [ES6](src/GreetElement.js) versions of
 this sample component to show how the mixins work well in either environment.
+
+To install and run:
+
+    > npm install
+    > grunt build
