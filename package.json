@@ -5,7 +5,7 @@
   "repository": "https://github.com/basic-web-components/sample-component",
   "license": "MIT",
   "dependencies": {
-    "basic-component-mixins": "^0.7.0",
+    "basic-component-mixins": "^0.7",
     "webcomponents.js": "^0.7.2"
   },
   "devDependencies": {
