@@ -6,8 +6,9 @@ The sample component uses mixins to handle common web component fundamentals:
 * Marshalling element attributes to properties.
 * Efficiently referencing elements in its shadow subtree.
 
-There are [ES5](Hello World\(ES5\)/) and [ES6](src/GreetElement.js) versions of
-this sample component to show how the mixins work well in either environment.
+There are [ES5](Hello World \(ES5\)/) and [ES6](src/GreetElement.js)
+versions of this sample component to show how the mixins work well in either
+environment.
 
 To install and run:
 
