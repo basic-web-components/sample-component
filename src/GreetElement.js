@@ -16,14 +16,14 @@ export default class GreetElement extends AttributeMarshalling(
   // If a user of this component sets the "punctuation" attribute in markup,
   // the AttributeMarshalling mixin will cause this property to be set.
   get punctuation() {
-    // Use a this.$.id reference created by the AutomaticNodeFinding mixin.
+    // Use a this.$.id reference created by the ShadowElementReferences mixin.
     return this.$.punctuation.textContent;
   }
   set punctuation(value) {
     this.$.punctuation.textContent = value;
   }
 
-  // This template is picked up by the TemplateStamping mixin.
+  // This template is picked up by the ShadowTemplate mixin.
   get template() {
     return `
       Hello,
